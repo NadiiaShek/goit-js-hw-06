@@ -23,43 +23,6 @@
 9 завдання - колір у стилях і показаний в інтерфейсі - однакові Screenshot by Gyazo
 task 10 за бажанням, але буде гарною практикою.
 
-Задание 2
-В HTML есть пустой список ul#ingredients.
-
-<ul id="ingredients"></ul>
-В JavaScript есть массив строк.
-
-const ingredients = [
-"Potatoes",
-"Mushrooms",
-"Garlic",
-"Tomatos",
-"Herbs",
-"Condiments",
-];
-
-Задание 3
-Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
-
-<ul class="gallery"></ul>
-Используй массив объектов images для создания элементов <img> вложенных в <li>. Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
-
-Все элементы галереи должны добавляться в DOM за одну операцию вставки.
-Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
-const images = [
-{
-url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-alt: "White and Black Long Fur Cat",
-},
-{
-url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-},
-{
-url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-alt: "Group of Horses Running",
-},
-];
 Задание 4
 Счетчик состоит из спана и кнопок, которые, при клике, должны увеличивать и уменьшать его значение на единицу.
 

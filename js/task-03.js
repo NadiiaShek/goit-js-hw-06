@@ -17,19 +17,21 @@ alt: "White and Black Long Fur Cat",
   }
 ];
 
-const createGalleryItem = ({ url, alt }) => 
-  `<li><img src="${url}" alt="${alt}" width = 200 height = 150></li>`;
+const galleryList = document.querySelector('.gallery')
 
-const galleryMarkup = images.reduce(
-  (acc, item) => acc + createGalleryItem(item,
-    ""));
+const markup = images
+	.map(image => `<li><img class="picture" src=${image.url} width = '400' alt='${image.alt}'></img></li>`)
+	.join('')
 
-const galleryList = document.querySelector(".gallery");
-galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
+  galleryList.insertAdjacentHTML('beforeend', markup)
+    // const img = document.createElement('img')
+  
+const pictures = document.querySelectorAll('.picture')
 
 galleryList.style.display = 'flex';
 galleryList.style.listStyle = 'none';
 galleryList.style.justifyContent = 'space-evenly';
+galleryList.style.gap = '15px'
 
 console.log(galleryList);
 
